@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="Ukrainian">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ukrainian Dawn</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="header__nav header__menu">
+            <button class="arrow arrow__hide">
+              <a href="#" class="arrow__link">
+                <img
+                  class="arrow__img"
+                  src="./images/up-arrow.svg"
+                  alt="arrow"
+                />
+              </a>
+            </button>
+            <button class="menu__btn">
+              <span></span>
+            </button>
+            <ul class="header__list header__menu-list">
+              <li class="header__item">
+                <a data-goto=".map" href="#" class="header__link">Головна</a>
+              </li>
+              <li class="header__item">
+                <a data-goto=".target" href="#" class="header__link">Мета</a>
+              </li>
+              <li class="header__item">
+                <a data-goto=".basics" href="#" class="header__link">Основи</a>
+              </li>
+              <li class="header__item">
+                <a data-goto=".question" href="#" class="header__link"
+                  >Запитання</a
+                >
+              </li>
+              <li class="header__item">
+                <a data-goto=".help" href="#" class="header__link"
+                  >Підтримати НАС</a
+                >
+              </li>
+              <li class="header__item">
+                <a href="#contacts" class="header__link">Контакти</a>
+              </li>
+              <li class="header__item">
+                <a data-goto=".join.html" href="join.html" class="header__link"
+                  >Приєднатися</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="map" id="map">
+        <div class="container">
+          <div class="map__img">
+            <img class="map__images" src="./images/logo.png" alt="map" />
+          </div>
+        </div>
+      </section>
+      <section class="target" id="target">
+        <div class="container">
+          <div class="target__inner">
+            <h1 class="title">Мета</h1>
+            <ol class="target__item">
+              <li class="target__list">
+                Задоволення та захист прав, свобод та інтересів людей.
+              </li>
+              <li class="target__list">Об'днання та підтримка людей.</li>
+              <li class="target__list">
+                Розробка та реалізація проектів спрямованих на вирішення
+                актуальних суспільних проблем.
+              </li>
+              <li class="target__list">
+                Сприяння дотримання Конституційних прав і свобод громадян.
+              </li>
+              <li class="target__list">
+                Сприяти розвитку системи соціального захисту.
+              </li>
+              <li class="target__list">
+                Створення та розвиток індивідуальних та колективних соціальних
+                програм.
+              </li>
+              <li class="target__list">
+                Сприяння здійсненню доступу громадян до соціальних та
+                економічних процесів.
+              </li>
+              <li class="target__list">
+                Сприяння відродження та розвитку духовних, гуманітарних
+                історичних та культурних цінностей.
+              </li>
+              <li class="target__list">
+                Сприяння впровадження суспільних програм і проектів, спрямованих
+                на здійснення та захист прав і свобод.
+              </li>
+              <li class="target__list">
+                Допомога органам місцевого самоврядування в напрямку покращення
+                благоустрою громад.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="basics" id="basics">
+        <div class="container">
+          <div class="basics__inner">
+            <div class="basics__title">
+              <h1 class="title">8 Основ "Творчого Суспільства"</h1>
+              <p class="basics__text">
+                8 основ "Творчого Суспільства" - це те, чого хочуть люди всього
+                світу. Це є базові цінності Творчого суспільства, які за
+                законним волевиявленням людей на всесвітньому референдумі можуть
+                стати основою законодавства всіх країн світу та міжнародного
+                права.
+              </p>
+            </div>
+            <ol class="basics__item">
+              <li class="basics__list">Життя Людини</li>
+              <li class="basics__list">Свобода Людини</li>
+              <li class="basics__list">Безпека Людини</li>
+              <li class="basics__list">
+                Прозорість та відкритість інформації для всіх
+              </li>
+              <li class="basics__list">Створювальна ідеологія</li>
+              <li class="basics__list">Розвиток Особистості</li>
+              <li class="basics__list">Справедливість та рівність</li>
+              <li class="basics__list">Самоврядування суспільства</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section class="question" id="question">
+        <div class="container">
+          <div class="question__inner">
+            <div class="question__title">
+              <h1 class="title">Маєте Запитання?</h1>
+              <p class="question__text">*Ми нікому не передаемо ваші даннію.</p>
+            </div>
+            <form class="question__form">
+              <input
+                class="question__form-input"
+                placeholder="Ваше ім'я"
+                type="text"
+              />
+              <input
+                class="question__form-input"
+                placeholder="Ваш e-mail"
+                type="email"
+              />
+              <textarea
+                class="question__form-area"
+                placeholder="Ваше Запитання"
+              ></textarea>
+              <button class="question__form-btn" type="submit">
+                Відправити
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="help" id="help">
+        <div class="container">
+          <div class="help__inner">
+            <h1 class="title help__title">Підтримати НАС</h1>
+            <ul class="help__item">
+              <li class="help__list">
+                <img
+                  class="help__grcode"
+                  src="./images/qr-code-UA.svg"
+                  alt="gr-code"
+                />
+                <h2 class="help__list-title">Рахунок UA</h2>
+              </li>
+              <li class="help__list">
+                <img
+                  class="help__grcode"
+                  src="./images/qr-code-EUR.svg"
+                  alt="gr-code"
+                />
+                <h2 class="help__list-title">Рахунок EUR</h2>
+              </li>
+              <li class="help__list">
+                <img
+                  class="help__grcode"
+                  src="./images/qr-code-USD.svg"
+                  alt="gr-code"
+                />
+                <h2 class="help__list-title">Рахунок USD</h2>
+              </li>
+              <li class="help__list">
+                <img
+                  class="help__grcode"
+                  src="./images/qr-code-paypal.svg"
+                  alt="gr-code"
+                />
+                <h2 class="help__list-title">PayPal</h2>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts__inner">
+            <h1 class="title">Контакти</h1>
+            <div class="contacts__info">
+              <h2 class="contacts__info--title">Голова організації</h2>
+              <p class="contacts__name">Димура Андрій Антонович</p>
+              <address class="contacts__address">
+                <a href="mailto:UkrainianDawn@gmail.com"
+                  >UkrainianDawn@gmail.com</a
+                >
+                <a href="tel:+380664935766">+38(066) 493-57-66</a>
+                <a href="tel:+380968939968">+38(096) 893-99-68</a>
+              </address>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="#" class="header__logo">
+            <img src="./images/logo-footer.jpg" alt="logo" />
+          </a>
+          <ul class="footer__social-item">
+            <li class="footer__social-list">
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-img"
+                  src="./images/telegram.svg"
+                  alt="Telegram"
+                />
+              </a>
+            </li>
+            <li class="footer__social-list">
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-img"
+                  src="./images/facebook.svg"
+                  alt="Faisbook"
+                />
+              </a>
+            </li>
+            <li class="footer__social-list">
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-img"
+                  src="./images/youtube.svg"
+                  alt="YouTube"
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="footer__wraper">
+            <p class="footer__text">
+              Громадська Організація "Український Світакнок"
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="Ukrainian">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ukrainian Dawn</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="header__nav header__menu">
+            <button class="arrow arrow__hide">
+              <a href="#" class="arrow__link">
+                <img
+                  class="arrow__img"
+                  src="./images/up-arrow.svg"
+                  alt="arrow"
+                />
+              </a>
+            </button>
+            <button class="menu__btn">
+              <span></span>
+            </button>
+            <ul class="header__list header__menu-list">
+              <li class="header__item">
+                <a
+                  data-goto=".index.html"
+                  href="index.html"
+                  class="header__link"
+                  >Головна</a
+                >
+              </li>
+              <li class="header__item">
+                <a
+                  data-goto=".join.html"
+                  href="join.html"
+                  class="header__link header__link--active"
+                  >Приєднатися</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="join">
+        <div class="container">
+          <div class="join__inner">
+            <h1 class="title join__title">Приєднатися</h1>
+            <p class="join__text">
+              Членом Організації може бути лише громадянин України, який
+              відповідно до Конституції України має право голосу на виборах,
+              виконує вимоги Статуту та бере участь у діяльності Організації.
+            </p>
+            <p class="join__text">
+              Якщо Ви бажаєте вступити до лав Організації, то необхідно:
+            </p>
+            <ul class="join__item">
+              <li class="join__list">
+                <p class="join__text">Ознайомитися зі Статутом Організації.</p>
+              </li>
+              <li class="join__list">
+                <p class="join__text">
+                  Надати особисту письмову заяву про бажання стати членом
+                  Організації.
+                </p>
+              </li>
+              <li class="join__list">
+                <p class="join__text">
+                  Рішення про прийом до Організації приймає Голова Організації.
+                </p>
+              </li>
+            </ul>
+            <form
+              class="form__join"
+              name="join__form"
+              autocomplete="on"
+              novalidate
+            >
+              <label class="form__label">
+                Ім'я
+                <input class="form__input" type="text" placeholder="Ім'я" />
+              </label>
+              <label class="form__label">
+                Прізвище
+                <input class="form__input" type="text" placeholder="Прізвище" />
+              </label>
+              <label class="form__label">
+                Електрона пошта
+                <input
+                  class="form__input"
+                  type="text"
+                  placeholder="Ваша адреса ел. пошти"
+                />
+              </label>
+              <label class="form__label">
+                Контактний номер телефону
+                <input class="form__input" type="text" placeholder="Телефон" />
+              </label>
+              <label class="form__label" for="region"
+                >Область в якій проживаєте?
+              </label>
+              <select class="form__select" name="region" id="region">
+                <option value="Вибрати"></option>
+                <option value="abroad">Закордон</option>
+                <option value="kyiv">м. Київ</option>
+                <option value="kyivska">Київська</option>
+                <option value="vinnytsia">Вінницька</option>
+                <option value="volynsk">Волинська</option>
+                <option value="dnipropetrovsk">Дніпропетровська</option>
+                <option value="donetsk">Донецька</option>
+                <option value="zhytomyr">Житомирська</option>
+                <option value="zakarpattia">Закарпатська</option>
+                <option value="zaporizhzhia">Запорізька</option>
+                <option value="ivano-frankivsk">Івано-Франківська</option>
+                <option value="kirovohradsk">Кіровоградська</option>
+                <option value="luhansk">Луганська</option>
+                <option value="lviv">Львівська</option>
+                <option value="mykolayivska">Миколаївська</option>
+                <option value="odesa">Одеська</option>
+                <option value="poltava">Полтавська</option>
+                <option value="rivne">Рівненська</option>
+                <option value="sumy">Сумська</option>
+                <option value="ternopilsk">Тернопільска</option>
+                <option value="kharkivska">Харківська</option>
+                <option value="khersonsk">Херсонська</option>
+                <option value="khmelnytska">Хмельницька</option>
+                <option value="cherkassy">Черкаська</option>
+                <option value="chernihivska">Чернігівська</option>
+                <option value="crimea">АР Крим</option>
+              </select>
+              <label class="form__label">
+                Місто/селище/село в якому проживаєте?
+                <input
+                  class="form__input"
+                  type="text"
+                  placeholder="Ваша відповідь"
+                />
+              </label>
+              <label class="form__label">
+                Чи маєте Ви членство у громадських організаціях, профспілках,
+                тощо?
+                <input
+                  class="form__input"
+                  type="text"
+                  placeholder="Ваша відповідь"
+                />
+              </label>
+              <label class="form__label">
+                Мета Вашого вступу до Громадянської Організації "Український
+                Світанок"
+                <input
+                  class="form__input"
+                  type="text"
+                  placeholder="Ваша відповідь"
+                />
+              </label>
+              <button class="question__form-btn" type="submit">
+                Відправити
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="index.html" class="footer__logo">
+            <img src="./images/logo-footer.jpg" alt="logo" />
+          </a>
+          <ul class="footer__social-item">
+            <li class="footer__social-list">
+              <a href="https://t.me/SergeiBogko" class="footer__social-link">
+                <img
+                  class="footer__social-img"
+                  src="./images/telegram.svg"
+                  alt="Telegram"
+                />
+              </a>
+            </li>
+            <li class="footer__social-list">
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-img"
+                  src="./images/facebook.svg"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+            <li class="footer__social-list">
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-img"
+                  src="./images/youtube.svg"
+                  alt="YouTube"
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="footer__wraper">
+            <p class="footer__text">
+              Громадська Організація "Український Світакнок"
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
